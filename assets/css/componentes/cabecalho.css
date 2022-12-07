@@ -1,11 +1,12 @@
 .cabecalho {
-    background-color: var(--cor-transparencia);
+    background-color: #212121;
     box-shadow: var(--sombra);
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 4.75rem;
     font-weight: 600;
+    
     
 }
 
@@ -15,6 +16,7 @@
 
 .cabecalho__lista-navegacao {
     display: flex;
+    color: aliceblue;
 }
 
 .cabecalho__link {
@@ -24,4 +26,35 @@
 
 .banner {
     width: 100%;
+}
+
+.cabecalho .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .cabecalho li{
+        display: none;
+    }
+    .cabecalho a.icon{
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .cabecalho .resposive {
+        position: relative;
+    }
+    .cabecalho .resposive .icon {
+        position: absolute;
+        right:0;
+        top: 0;
+    }
+
+   .cabecalho.resposive li {
+        float: none;
+        display: block;
+        text-align: left;
+   }
 }
