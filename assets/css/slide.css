@@ -8,7 +8,7 @@
 
 
 .slide-container {
-    width: 1000px;
+    width: 100%;
     position: relative;
     margin: auto;
 }
@@ -86,9 +86,7 @@
     .proximo, .anterior, .texto-banner{
         font-size: 11px;
     }
-    .slide-container{
-        width: 100%;
-    }
+   
 }
 
 .barra-amarela{

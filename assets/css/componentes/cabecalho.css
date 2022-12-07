@@ -42,19 +42,3 @@
     }
 }
 
-@media screen and (max-width: 600px){
-    .cabecalho .resposive {
-        position: relative;
-    }
-    .cabecalho .resposive .icon {
-        position: absolute;
-        right:0;
-        top: 0;
-    }
-
-   .cabecalho.resposive li {
-        float: none;
-        display: block;
-        text-align: left;
-   }
-}
