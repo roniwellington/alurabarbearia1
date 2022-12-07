@@ -82,9 +82,12 @@
     to {opacity: 1;}
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 600px) {
     .proximo, .anterior, .texto-banner{
         font-size: 11px;
+    }
+    .slide-container{
+        width: 100%;
     }
 }
 
