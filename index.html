@@ -1,123 +1,171 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Barbearia Alura</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/base/base.css">
-	<link rel="stylesheet" href="assets/css/componentes/cabecalho.css">
-	<link rel="stylesheet" href="assets/css/slide.css">
-
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alura || Barbearia</title>
+	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+		integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="shortcut icon" href="assets/img/Favicon2.png" type="image/x-icon">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/flex.css">
+	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
-	<header class="cabecalho container topnav" id="menuNav">
-		<img src="assets/img/logo-branco.png" alt="Logo da Barbearia Alura" class="cabecalho__logo">
-		<nav class="" >
-			<ul class="cabecalho__lista-navegacao">
-				<li class="cabecalho__link"><a href="index.html">Home</a></li>
-				<li class="cabecalho__link"><a href="Serviços.html">Serviços</a></li>
-				<li class="cabecalho__link"><a href="blog.html">Blog</a></li>
-				<li class="cabecalho__link"><a href="contato.html">Contato</a></li>
+	<header>
+		<nav>
+			<ul class="menu">
+				<li class="menu__item">
+					<h1 class="menu__titulo"></h1>
+				</li>
+				<li class="menu__item"><a href="index.html">Home</a></li>
+				<li class="menu__item"><a href="produtos.html">Produtos</a></li>
+				<li class="menu__item"><a href="blog.html">Blog</a></li>
+				<li class="menu__item"><a href="contato.html">Contato</a></li>
+
+				<li class="menu__item menu__pesquisar">
+					<label class="menu__label" for="pesquisar">
+						<input class="menu__input" type="search" name="" placeholder="O que você procura?"
+							id="pesquisar">
+					</label>
+				</li>
 			</ul>
 		</nav>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-			<i class="fa fa-bars"></i>
-		</a>
 	</header>
-
-
-	<section class="slide-container">
-		<div class="slide-banner fade">
-			<div class="numeros">
-				<h2>Cortes insanos</h2>
-			</div>
-			<img class="banner" src="assets/img/banner01.jpg">
-			<h3 class="texto-banner"> Salão Alura</h3>
+	<section class="banner">
+		<div class="banner-contato">
+			<h2 class="banner__titulo">Cortes de Cabelos da moda</h2>
+			<button class="botao__banner">Contato</button>
 		</div>
-		<div class="slide-banner fade">
-			<div class="numeros">2 / 3</div>
-			<img class="banner" src="assets/img/banner02.jpg">
-			<h3 class="texto-banner"> Salão Alura</h3>
-		</div>
-		<div class="slide-banner fade">
-			<div class="numeros">3 / 3</div>
-			<img class="banner" src="assets/img/banner03.jpg">
-			<h3 class="texto-banner"> Salão Alura</h3>
-		</div>
-		<a class="anterior" onclick="maisSlides(-1)">&#10094;</a>
-		<a class="proximo" onclick="maisSlides(1)">&#10095;</a>
-		<div class="barra-amarela"></div>
 	</section>
-	<br>
-	<div style="text-align: center;">
-		<span class="ponto" onclick="slideAtual(1)"></span>
-		<span class="ponto" onclick="slideAtual(2)"></span>
-		<span class="ponto" onclick="slideAtual(3)"></span>
-
-	</div>
-
-
-	<main>
-		<section class="principal">
-			<h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
-
-			<img class="utensilios" src="utensilios.jpg" alt="Utensilios de um barbeiro.">
-
-			<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor
-				para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos
-				clientes a cada dia.</p>
-
-			<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos
-						clientes"</strong>.</em></p>
-
-			<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui
-				padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+	<!-- <div class="banner-amarelo"></div> -->
+	<main class="principal">
+		<section class="cortes">
+			<ul class="cortes__cards cortes__cards--gap ">
+				<li class="cortes__item cortes__imagem">
+					<div class="cortes__item--texto">
+						<h4>Salão Alura</h4>
+						<h2>Corte de Cabelo</h2>
+					</div>
+				</li>
+				<li class="cortes__item cortes__imagem2">
+					<div class="cortes__item--texto">
+						<h4>Salão Alura</h4>
+						<h2>Corte de Cabelo</h2>
+					</div>
+				</li>
+				<li class="cortes__item cortes__imagem3">
+					<div class="cortes__item--texto">
+						<h4>Salão Alura</h4>
+						<h2>Corte de Barba</h2>
+					</div>
+				</li>
+				<li class="cortes__item cortes__imagem4">
+					<div class="cortes__item--texto">
+						<h4>Salão Alura</h4>
+						<h2>Corte de Barba</h2>
+					</div>
+				</li>
+			</ul>
 		</section>
 
-		<section class="mapa">
-			<h3 class="titulo-principal">Nosso estabelecimento</h3>
-			<p>Nosso estabelecimento está localizado no coração da cidade.</p>
-
-			<div class="mapa-conteudo">
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4483278365396!2d-46.63466568562861!3d-23.588249068469487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum!5e0!3m2!1spt-BR!2sbr!4v1568814489656!5m2!1spt-BR!2sbr"
-					width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		<section class="cortes__produtos">
+			<div class="cortes__titulos--principal">
+				<h4 class="cortes__produtos--menor">nossos produtos</h4>
+				<h2 class="cortes__produtos--titulo">Produtos em Destatque</h2>
+			</div>
+			<div class="">
+				<ul class="cortes__cards cortes__cards--produtos cortes__lista">
+					<li>
+						<img src="assets/img/pentebarba.png" alt="">
+						<div>
+							<h3>escova especial para barba</h3>
+							<span></span>
+							<span>R$14.28</span>
+						</div>
+					</li>
+					<li>
+						<img src="assets/img/maquina.png" alt="">
+						<div>
+							<h3>escova especial para barba</h3>
+							<span></span>
+							<span>R$14.28</span>
+						</div>
+					</li>
+					<li>
+						<img src="assets/img/tesoura.png" alt="">
+						<div>
+							<h3>escova especial para barba</h3>
+							<span></span>
+							<span>R$14.28</span>
+						</div>
+					</li>
+					<li>
+						<img src="assets/img/gillete01.png" alt="">
+						<div>
+							<h3>escova especial para barba</h3>
+							<span></span>
+							<span>R$14.28</span>
+						</div>
+					</li>
+					<li>
+						<img src="assets/img/burrifador.png" alt="">
+						<div>
+							<h3>escova especial para barba</h3>
+							<span></span>
+							<span>R$14.28</span>
+						</div>
+					</li>
+					<li>
+						<img src="assets/img/kitbarbicha.png" alt="">
+						<div>
+							<h3>escova especial para barba</h3>
+							<span></span>
+							<span>R$14.28</span>
+						</div>
+					</li>
+					<li>
+						<img src="assets/img/kitbarb.png" alt="">
+						<div>
+							<h3>escova especial para barba</h3>
+							<span></span>
+							<span>R$14.28</span>
+						</div>
+					</li>
+					<li>
+						<img src="assets/img/spraykit.png" alt="">
+						<div>
+							<h3>escova especial para barba</h3>
+							<span></span>
+							<span>R$14.28</span>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</section>
 
-		<section class="beneficios">
-			<h3 class="titulo-principal">Benefícios</h3>
 
-			<div class="conteudo-beneficios">
-				<ul class="lista-beneficios">
-					<li class="itens">Atendimento aos Clientes</li>
-					<li class="itens">Espaço diferenciado</li>
-					<li class="itens">Localização</li>
-					<li class="itens">Profissionais Qualificados</li>
-					<li class="itens">Pontualidade</li>
-					<li class="itens">Limpeza</li>
-				</ul><img src="beneficios.jpg" class="imagem-beneficios">
-			</div>
-
-			<div class="video">
-				<iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0"
-					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen></iframe>
-			</div>
-		</section>
+		<p class="espaco">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi aliquam provident
+			ratione quam possimus adipisci nobis corrupti velit repellendus cupiditate, neque eius vel eaque architecto,
+			commodi veritatis dolor assumenda?</p>
+		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi aliquam provident ratione quam
+			possimus adipisci nobis corrupti velit repellendus cupiditate, neque eius vel eaque architecto, commodi
+			veritatis dolor assumenda?</p>
+		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi aliquam provident ratione quam
+			possimus adipisci nobis corrupti velit repellendus cupiditate, neque eius vel eaque architecto, commodi
+			veritatis dolor assumenda?</p>
+		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi aliquam provident ratione quam
+			possimus adipisci nobis corrupti velit repellendus cupiditate, neque eius vel eaque architecto, commodi
+			veritatis dolor assumenda?</p>
+		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi aliquam provident ratione quam
+			possimus adipisci nobis corrupti velit repellendus cupiditate, neque eius vel eaque architecto, commodi
+			veritatis dolor assumenda?</p>
 	</main>
-
-	<footer>
-		<img src="logo-branco.png">
-		<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
-	</footer>
-	<script src="assets/js/slide.js"></script>
-	<script src="assets/js/responsive-menu.js"></script>
 </body>
 
 </html>

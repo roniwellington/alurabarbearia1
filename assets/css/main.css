@@ -1,0 +1,21 @@
+.cortes__titulos--principal {
+    text-align: center;
+    margin-top: 55px;
+}
+
+.cortes__produtos--titulo{
+    font-size: 35px;
+    font-family: var(--fonte-secundaria);
+    padding-top: 15px;
+}
+
+.cortes__produtos--menor {
+    font-size: 20px;
+    color: rgb(246, 157, 22);
+}
+
+.cortes__lista{
+    margin-top: 35px;
+}
+
+
