@@ -1,0 +1,12 @@
+
+.rodape{
+    background-color: rgb(67, 66, 66);
+    align-items: center;
+}
+
+.rodape__div{
+    background-color: rgb(33, 33, 33);
+    color: aliceblue;
+    padding: 25px;
+    text-align: center;
+}

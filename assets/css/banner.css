@@ -1,0 +1,49 @@
+@media(min-width: 720px) {
+    /*banner*/
+ 
+ .banner {
+     background-image: url('../img/banner01.jpg');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .banner-contato--banner{
+    margin-top: 60px;
+ }
+ 
+ .banner-contato{
+     width: 600px;
+     height: 300px;
+     background-color: rgba(0, 0, 0, 0.584);
+     border-radius: 4px;
+     padding: 0 20px;
+     text-align: center;
+     
+ }
+ 
+ .banner__titulo{
+    margin-top: 5px;
+    font-family: var(--fonte-secundaria);
+     color: aliceblue;
+     font-weight: bold;
+     font-size: 36px;
+     padding: 20px;
+ }
+
+ .banner-contato h4{
+    /* color: coral; */
+    color: #f9a703;
+    margin-top: 15px;
+    font-size: 25px;
+ }
+ 
+ }
+ 
+ 
+ 
+ 

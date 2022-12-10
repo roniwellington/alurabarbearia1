@@ -12,7 +12,6 @@
     column-gap: 1.5rem;
     /* row-gap: 7rem; */
     justify-content: center;
-    
 }
 
 .cortes__cards--gap{
@@ -71,8 +70,17 @@
         justify-content: center;
     }
 
+    .cortes__cards--produtos{
+        margin-top: 40px;
+    }
+
     .cortes__item{
         max-width: 400px;
+    }
+
+     /*blog*/
+     .blog__informacoes{
+        column-gap: 75px
     }
 }
 

@@ -1,0 +1,74 @@
+.cortes__item {
+    margin-top: 20px;
+    background-color: rgb(0, 0, 0);
+    width: 225px;
+    padding-bottom: 1rem;
+    height: 450px;
+    flex-grow: 1;
+    max-width: 350px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cortes__imagem{
+    background-image: url('../img/banner-2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cortes__imagem:hover{
+    background-image: url('../img/banner-2.jpg');
+    background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
+}
+
+.cortes__imagem2{
+    background-image: url('../img/banner-3.jpg');
+}
+
+.cortes__imagem2:hover{
+    background-image: url('../img/banner-3.jpg');
+}
+
+.cortes__imagem3{
+    background-image: url('../img/banner-4.jpg'); 
+}
+
+.cortes__imagem3:hover{
+    background-image: url('../img/banner-4.jpg');
+}
+
+.cortes__imagem4{
+    background-image: url('../img/banner-5.jpg');
+}
+
+.cortes__imagem4:hover{
+    background-image: url('../img/banner-5.jpg');
+}
+
+
+.cortes__item h2, h4{
+    font-weight: bold;  
+}
+
+.cortes__item--texto{
+    padding: 15px;
+    height: 100%;
+    
+}
+
+.cortes__item h2 {
+    color: #f9a703;
+    font-size: 35px;
+    font-family: var(--fonte-secundaria);
+    margin-top: 10px;
+    
+}
+
+.cortes__item h4 {   
+    color: #ffffff;
+    font-size: 16px;
+    
+}

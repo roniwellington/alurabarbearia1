@@ -2,170 +2,323 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Alura || Barbearia</title>
-	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-		integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="shortcut icon" href="assets/img/Favicon2.png" type="image/x-icon">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/flex.css">
-	<link rel="stylesheet" href="assets/css/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/img/Favicon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/banner.css">
+    <link rel="stylesheet" href="assets/css/primeirasecao.css">
+    <link rel="stylesheet" href="assets/css/flex.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/botao.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 
 <body>
-	<header>
-		<nav>
-			<ul class="menu">
-				<li class="menu__item">
-					<h1 class="menu__titulo"></h1>
-				</li>
-				<li class="menu__item"><a href="index.html">Home</a></li>
-				<li class="menu__item"><a href="produtos.html">Produtos</a></li>
-				<li class="menu__item"><a href="blog.html">Blog</a></li>
-				<li class="menu__item"><a href="contato.html">Contato</a></li>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="menu__item">
+                    <h1 class="menu__titulo"></h1>
+                </li>
+                <li class="menu__item"><a href="index.html">Home</a></li>
+                <li class="menu__item"><a href="#produtos">Produtos</a></li>
+                <li class="menu__item"><a href="#blog">Blog</a></li>
+                <li class="menu__item"><a href="contato.html">Contato</a></li>
 
-				<li class="menu__item menu__pesquisar">
-					<label class="menu__label" for="pesquisar">
-						<input class="menu__input" type="search" name="" placeholder="O que você procura?"
-							id="pesquisar">
-					</label>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<section class="banner">
-		<div class="banner-contato">
-			<h2 class="banner__titulo">Cortes de Cabelos da moda</h2>
-			<button class="botao__banner">Contato</button>
-		</div>
-	</section>
-	<!-- <div class="banner-amarelo"></div> -->
-	<main class="principal">
-		<section class="cortes">
-			<ul class="cortes__cards cortes__cards--gap ">
-				<li class="cortes__item cortes__imagem">
-					<div class="cortes__item--texto">
-						<h4>Salão Alura</h4>
-						<h2>Corte de Cabelo</h2>
-					</div>
-				</li>
-				<li class="cortes__item cortes__imagem2">
-					<div class="cortes__item--texto">
-						<h4>Salão Alura</h4>
-						<h2>Corte de Cabelo</h2>
-					</div>
-				</li>
-				<li class="cortes__item cortes__imagem3">
-					<div class="cortes__item--texto">
-						<h4>Salão Alura</h4>
-						<h2>Corte de Barba</h2>
-					</div>
-				</li>
-				<li class="cortes__item cortes__imagem4">
-					<div class="cortes__item--texto">
-						<h4>Salão Alura</h4>
-						<h2>Corte de Barba</h2>
-					</div>
-				</li>
-			</ul>
-		</section>
+                <li class="menu__item menu__pesquisar">
+                    <label class="menu__label" for="pesquisar">
+                        <input class="menu__input" type="search" name="" placeholder="O que você procura?"
+                            id="pesquisar">
+                    </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="banner-contato">
+            <div class="banner-contato--banner">
+                <h4>Compre com Desconto de até 50%</h4>
+                <h2 class="banner__titulo">Produtos para Barbearia</h2>
+                <a href="#produtos"><button class="botao">Compre Agora</button></a>
+            </div>
+        </div>
+    </section>
+    <!-- <div class="banner-amarelo"></div> -->
+    <main class="principal">
+        <!-- primeiroseção -->
+        <section class="cortes">
+            <ul class="cortes__cards cortes__cards--gap ">
+                <li class="cortes__item cortes__imagem">
+                    <div class="cortes__item--texto">
+                        <h4>Salão Alura</h4>
+                        <h2>Corte de Cabelo</h2>
+                    </div>
+                </li>
+                <li class="cortes__item cortes__imagem cortes__imagem2">
+                    <div class="cortes__item--texto">
+                        <h4>Salão Alura</h4>
+                        <h2>Corte de Cabelo</h2>
+                    </div>
+                </li>
+                <li class="cortes__item cortes__imagem cortes__imagem3">
+                    <div class="cortes__item--texto">
+                        <h4>Salão Alura</h4>
+                        <h2>Corte de Barba</h2>
+                    </div>
+                </li>
+                <li class="cortes__item cortes__imagem cortes__imagem4">
+                    <div class="cortes__item--texto">
+                        <h4>Salão Alura</h4>
+                        <h2>Corte de Barba</h2>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- seção produtos -->
+        <section class="cortes__produtos" id="produtos">
+            <div class="cortes__titulos--principal">
+                <h4 class="cortes__produtos--menor">nossos produtos</h4>
+                <h2 class="cortes__produtos--titulo">Produtos em Destatque</h2>
+            </div>
+            <div class="">
+                <ul class="cortes__cards cortes__cards--produtos cortes__cards--gap">
+                    <li class="cortes__produtos-bloco">
+                        <img src="assets/img/pentebarba.png" alt="">
+                        <div class="cortes__produtos-texto">
+                            <span class="estrelinhas"><img src="assets/img/Estrelinhas1.png" alt=""></span>
+                            <h3>escova especial para barba</h3>
+                            <span>R$14.28</span>
+                            
+                        </div>
+                        <button>Comprar</button>
+                    </li>
+                    <li class="cortes__produtos-bloco">
+                        <img src="assets/img/maquina.png" alt="">
+                        <div class="cortes__produtos-texto">
+                            <span class="estrelinhas"><img src="assets/img/Estrelinhas.png" alt=""></span>
+                            <h3>escova especial para barba</h3>
+                            <span>R$14.28</span>
+                        </div>
+                        <button>Comprar</button>
+                    </li>
+                    <li class="cortes__produtos-bloco">
+                        <img src="assets/img/tesoura.png" alt="">
+                        <div class="cortes__produtos-texto">
+                            <span class="estrelinhas"><img src="assets/img/Estrelinhas2.png" alt=""></span>
+                            <h3>escova especial para barba</h3>
+                            <span></span>
+                            <span>R$14.28</span>
+                        </div>
+                        <button>Comprar</button>
+                    </li>
+                    <li class="cortes__produtos-bloco">
+                        <img src="assets/img/gillete01.png" alt="">
+                        <div class="cortes__produtos-texto">
+                            <span class="estrelinhas"><img src="assets/img/Estrelinhas.png" alt=""></span>
+                            <h3>escova especial para barba</h3>
+                            <span>R$14.28</span>
+                        </div>
+                        <button>Comprar</button>
+                    </li>
+                    <li class="cortes__produtos-bloco">
+                        <img src="assets/img/burrifador.png" alt="">
+                        <div class="cortes__produtos-texto">
+                            <span class="estrelinhas"><img src="assets/img/Estrelinhas4.png" alt=""></span>
+                            <h3>escova especial para barba</h3>
+                            <span>R$14.28</span>
+                        </div>
+                        <button>Comprar</button>
+                    </li>
+                    <li class="cortes__produtos-bloco">
+                        <img src="assets/img/kitbarbicha.png" alt="">
+                        <div class="cortes__produtos-texto">
+                            <span class="estrelinhas"><img src="assets/img/Estrelinhas.png" alt=""></span>
+                            <h3>escova especial para barba</h3>
+                            <span>R$14.28</span>
+                        </div>
+                        <button>Comprar</button>
+                    </li>
+                    <li class="cortes__produtos-bloco">
+                        <img src="assets/img/kitbarb.png" alt="">
+                        <div class="cortes__produtos-texto">
+                            <span class="estrelinhas"><img src="assets/img/Estrelinhas3.png" alt=""></span>
+                            <h3>escova especial para barba</h3>
+                            <span>R$14.28</span>
+                        </div>
+                        <button>Comprar</button>
+                    </li>
+                    <li class="cortes__produtos-bloco">
+                        <img src="assets/img/spraykit.png" alt="">
+                        <div class="cortes__produtos-texto">
+                            <span class="estrelinhas"><img src="assets/img/Estrelinhas.png" alt=""></span>
+                            <h3>escova especial para barba</h3>
+                            <span>R$14.28</span>
+                        </div>
+                        <button>Comprar</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- seção dos acessorios  com desconto -->
+        <section class=" cortes__promocoes">
+            <div class="cortes__cards cortes__promocoes--secao">
+                <div class="cortes__promocoes--conteudo cortes__promocoes--conteudoUm">
+                    <div class="cortes__promocoes--texto">
+                        <h4>aproveite 15% de desconto no primeiro pedido</h4>
+                        <h2>Acessórios para corte de cabelo</h2>
+                        <button class="botao__banner botao">Compre agora</button>
+                    </div>
+                </div>
+                <div class="cortes__promocoes--conteudo cortes__promocoes--conteudoDois">
+                    <div class="cortes__promocoes--texto">
+                        <h4>aproveite 15% de desconto no primeiro pedido</h4>
+                        <h2>Barba Aparador</h2>
+                        <button class="botao__banner botao">Compre agora</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- produtos em Promoção -->
+        <section class="cortes__produtos">
+            <div class="cortes__titulos--principal">
+                <h4 class="cortes__produtos--menor">nossos produtos</h4>
+                <h2 class="cortes__produtos--titulo">Produtos em Promoção</h2>
+            </div>
+            <div>
+                <ul class="cortes__cards cortes__cards--produtos cortes__cards--gap">
 
-		<section class="cortes__produtos">
-			<div class="cortes__titulos--principal">
-				<h4 class="cortes__produtos--menor">nossos produtos</h4>
-				<h2 class="cortes__produtos--titulo">Produtos em Destatque</h2>
-			</div>
-			<div class="">
-				<ul class="cortes__cards cortes__cards--produtos cortes__lista">
-					<li>
-						<img src="assets/img/pentebarba.png" alt="">
-						<div>
-							<h3>escova especial para barba</h3>
-							<span></span>
-							<span>R$14.28</span>
-						</div>
-					</li>
-					<li>
-						<img src="assets/img/maquina.png" alt="">
-						<div>
-							<h3>escova especial para barba</h3>
-							<span></span>
-							<span>R$14.28</span>
-						</div>
-					</li>
-					<li>
-						<img src="assets/img/tesoura.png" alt="">
-						<div>
-							<h3>escova especial para barba</h3>
-							<span></span>
-							<span>R$14.28</span>
-						</div>
-					</li>
-					<li>
-						<img src="assets/img/gillete01.png" alt="">
-						<div>
-							<h3>escova especial para barba</h3>
-							<span></span>
-							<span>R$14.28</span>
-						</div>
-					</li>
-					<li>
-						<img src="assets/img/burrifador.png" alt="">
-						<div>
-							<h3>escova especial para barba</h3>
-							<span></span>
-							<span>R$14.28</span>
-						</div>
-					</li>
-					<li>
-						<img src="assets/img/kitbarbicha.png" alt="">
-						<div>
-							<h3>escova especial para barba</h3>
-							<span></span>
-							<span>R$14.28</span>
-						</div>
-					</li>
-					<li>
-						<img src="assets/img/kitbarb.png" alt="">
-						<div>
-							<h3>escova especial para barba</h3>
-							<span></span>
-							<span>R$14.28</span>
-						</div>
-					</li>
-					<li>
-						<img src="assets/img/spraykit.png" alt="">
-						<div>
-							<h3>escova especial para barba</h3>
-							<span></span>
-							<span>R$14.28</span>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</section>
+                    <li class="cortes__produtos-bloco">
+                        <img src="assets/img/burrifador.png" alt="">
+                        <div class="cortes__produtos-texto">
+                            <h3>escova especial para barba</h3>
+                            <span></span>
+                            <span>R$14.28</span>
+                        </div>
+                        <button>Comprar</button>
+                    </li>
+                    <li class="cortes__produtos-bloco">
+                        <img src="assets/img/kitbarbicha.png" alt="">
+                        <div class="cortes__produtos-texto">
+                            <h3>escova especial para barba</h3>
+                            <span></span>
+                            <span>R$14.28</span>
+                        </div>
+                        <button>Comprar</button>
+                    </li>
+                    <li class="cortes__produtos-bloco">
+                        <img src="assets/img/kitbarb.png" alt="">
+                        <div class="cortes__produtos-texto">
+                            <h3>escova especial para barba</h3>
+                            <span></span>
+                            <span>R$14.28</span>
+                        </div>
+                        <button>Comprar</button>
+                    </li>
+                    <li class="cortes__produtos-bloco">
+                        <img src="assets/img/spraykit.png" alt="">
+                        <div class="cortes__produtos-texto">
+                            <h3>escova especial para barba</h3>
+                            <span></span>
+                            <span>R$14.28</span>
+                        </div>
+                        <button>Comprar</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- blog -->
+        <section class="blog" id="blog">
+            <h2 class="blog__titulo">Nosso Blog</h2>
+            <div>
+                <ul class="blog__informacoes">
+                    <li class="blog__informacoes--conteudo">
+                        <img src="assets/img/imagemblog.jpg" alt="" class="blog--imagem">
+                        <div class="cortes__blog">
+                            <h3>Lorem ipsum dolor sit amet</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore vitae tempore modi
+                                placeat numquam?</p>
+                            <button>Leia mais</button>
+                        </div>
+                    </li>
+                    <li class="blog__informacoes--conteudo">
+                        <img src="assets/img/blogimagemdois.jpg" alt="" class="blog--imagem">
+                        <div class="cortes__blog">
+                            <h3>Lorem ipsum dolor sit amet</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore vitae tempore modi
+                                placeat numquam?</p>
+                            <button>Leia mais</button>
+                        </div>
+                    </li>
+                    <li class="blog__informacoes--conteudo">
+                        <img src="assets/img/blogimagemtres.jpg" alt="" class="blog--imagem">
+                        <div class="cortes__blog">
+                            <h3>Lorem ipsum dolor sit amet</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore vitae tempore modi
+                                placeat numquam?</p>
+                            <button>Leia mais</button>
+                        </div>
 
+                    </li>
+                </ul>
+            </div>
+            <hr>
+        </section>
+        <section>
+            <ul class="cortes__cards cortes__cards--gap">
+                <li>
+                    <img src="assets/img/carrinhoentrega.png" alt="">
+                    <h3>fácil de comprar e devolver</h3>
+                    
+                </li>
+                <li>
+                    <img src="assets/img/cartao.png" alt="">
+                    <h3>fácil de comprar e devolver</h3>
+                    
+                </li>
+                <li>
+                    <img src="assets/img/fone.png" alt="">
+                    <h3>fácil de comprar e devolver</h3>
+                    
+                </li>
+                <li>
+                    <img src="assets/img/celular.png" alt="">
+                    <h3>fácil de comprar e devolver</h3>
+                    
+                </li>
+            </ul>
+        </section>
+    </main>
 
-		<p class="espaco">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi aliquam provident
-			ratione quam possimus adipisci nobis corrupti velit repellendus cupiditate, neque eius vel eaque architecto,
-			commodi veritatis dolor assumenda?</p>
-		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi aliquam provident ratione quam
-			possimus adipisci nobis corrupti velit repellendus cupiditate, neque eius vel eaque architecto, commodi
-			veritatis dolor assumenda?</p>
-		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi aliquam provident ratione quam
-			possimus adipisci nobis corrupti velit repellendus cupiditate, neque eius vel eaque architecto, commodi
-			veritatis dolor assumenda?</p>
-		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi aliquam provident ratione quam
-			possimus adipisci nobis corrupti velit repellendus cupiditate, neque eius vel eaque architecto, commodi
-			veritatis dolor assumenda?</p>
-		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi aliquam provident ratione quam
-			possimus adipisci nobis corrupti velit repellendus cupiditate, neque eius vel eaque architecto, commodi
-			veritatis dolor assumenda?</p>
-	</main>
+    <footer>
+        <hr>
+        <ul class="cortes__cards cortes__cards--gap rodape">
+            <li>
+                <a href="index.html"><img src="assets/img/logo-branco-menor.png" alt=""></a>
+               
+            </li>
+            <li>
+                <a href="https://github.com/roniwellington" target="_blank"><img src="assets/img/github-icone.jpg" alt=""></a>
+                
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/roni-wellington-377b15233/?trk=people-guest_people_search-card&original_referer=https%3A%2F%2Froniwellington%2Egithub%2Eio%2F&originalSubdomain=br" target="_blank"><img src="assets/img/linkedin.jpg" alt=""></a>
+                
+            </li>
+            <li>
+                <a href="https://www.instagram.com/roniwellington/" target="_blank"><img src="assets/img/instagram.png" alt=""></a>
+            </li>
+        </ul>
+        <div class="rodape__div">&copy;Copyright Barbearia Alura - 2022</div>
+    </footer>
 </body>
 
 </html>

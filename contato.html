@@ -1,87 +1,115 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Contato - Barbearia Alura</title>
+<html lang="en">
 
-		<link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<header>
-			<div class="caixa">
-				<h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Barbearia| Contato</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/img/Favicon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/flex.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/contato.css">
+</head>
 
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="produtos.html">Produtos</a></li>
-						<li><a href="contato.html">Contato</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="menu__item">
+                    <h1 class="menu__titulo"></h1>
+                </li>
+                <li class="menu__item"><a href="index.html">Home</a></li>
+                <li class="menu__item"><a href="produtos.html">Produtos</a></li>
+                <li class="menu__item"><a href="blog.html">Blog</a></li>
+                <li class="menu__item"><a href="contato.html">Contato</a></li>
 
-		<main>
-			<form>
-				<label for="nomesobrenome">Nome e sobrenome</label>
-				<input type="text" id="nomesobrenome" class="input-padrao" required>
+                <li class="menu__item menu__pesquisar">
+                    <label class="menu__label" for="pesquisar">
+                        <input class="menu__input" type="search" name="" placeholder="O que você procura?"
+                            id="pesquisar">
+                    </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div><img src="assets/img/banner--novo.png" alt="" class="banner__contato--black"></div>
+    <main>
+        <section class="contato">
+                <ul class="contato__conteudo--texto contato-background">
+                    <li class="contato">
+                        <h2>Sobre a Barbearia Alura</h2>
+                        <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de
+                            melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e
+                            conquista novos clientes a cada dia.</p>
+                        <p id="missao"><em>Nossa missão é:<strong> "Proporcionar auto-estima e qualidade de vida aos
+                                    clientes".</strong></em></p>
+                        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui
+                            padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+                    </li>
+                    <img src="assets/img/imagemblog.jpg" alt="" class="contato__img">
+                </ul>
+        </section>
+        <section class="contato-background">
+            <div class="contato__conteudo">
+                <h2>Contato e Localização</h2>
+                <p>Nosso estabelecimento está localizado no coração da cidade</p>
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.449977466477!2d-46.63452058449342!3d-23.588189868469915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Escola%20de%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1660094215049!5m2!1spt-BR!2sbr"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div>
+                <form action="">
+                    <label for="nomesobrenome">Nome e Sobrenome</label>
+                    <input type="text" id="nomesobrenome" class="input-padrao" required>
 
-				<label for="email">Email</label>
-				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" class="input-padrao" required placeholder="email@gmail.com">
 
-				<label for="telefone">Telefone</label>
-				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                    <label for="telefone">Telefone</label>
+                    <input type="number" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
 
-				<label for="mensagem">Mensagem</label>
-				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="" id="mensagem" cols="60" rows="5" class="input-padrao" required></textarea>
 
-				<fieldset>
-					<legend>Como prefere o nosso contato?</legend>
-					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
-					
-					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
-					
-					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
-				</fieldset>
+                    <input type="submit" value="Enviar formulario" class="enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <ul class="cortes__cards cortes__cards--gap rodape">
+            <li>
+                <a href="index.html"><img src="assets/img/logo-branco-menor.png" alt=""></a>
 
-				<fieldset>
-					<legend>Qual horário prefere ser atendido?</legend>
-					<select>
-						<option>Manhã</option>
-						<option>Tarde</option>
-						<option>Noite</option>
-					</select>
-				</fieldset>
+            </li>
+            <li>
+                <a href="https://github.com/roniwellington" target="_blank"><img src="assets/img/github-icone.jpg"
+                        alt=""></a>
 
-				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/roni-wellington-377b15233/?trk=people-guest_people_search-card&original_referer=https%3A%2F%2Froniwellington%2Egithub%2Eio%2F&originalSubdomain=br"
+                    target="_blank"><img src="assets/img/linkedin.jpg" alt=""></a>
 
-				<input type="submit" value="Enviar formulário" class="enviar">
-			</form>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/roniwellington/" target="_blank"><img src="assets/img/instagram.png"
+                        alt=""></a>
+            </li>
+        </ul>
+        <div class="rodape__div">&copy;Copyright Barbearia Alura - 2022</div>
+    </footer>
+</body>
 
-			<table>
-				<tr>
-					<td>Dia</td>
-					<td>Horário</td>
-				</tr>
-				<tr>
-					<td>Segunda</td>
-					<td>8h ~ 20h</td>
-				</tr>
-				<tr>
-					<td>Quarta</td>
-					<td>8h ~ 20h</td>
-				</tr>
-				<tr>
-					<td>Sexta</td>
-					<td>8h ~ 20h</td>
-				</tr>
-			</table>
-		</main>
-
-		<footer>
-			<img src="logo-branco.png" alt="Logo da Barbearia Alura">
-			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
-		</footer>
-	</body>
 </html>

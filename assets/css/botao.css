@@ -1,0 +1,30 @@
+.botao{
+    background-color: #f9a703;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 15rem;
+    padding: 10px;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: #f2f2f2;
+    color: darkgoldenrod;
+    transform: scale(1.2);
+    border:1px solid darkgoldenrod;
+}
+
+hr {
+    margin-top: 50px;
+    width: 85%;
+    text-align: center;
+    color: rgb(231, 229, 229);
+}
+

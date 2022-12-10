@@ -1,9 +1,11 @@
+/* seção produtos em destaque */
+
 .cortes__titulos--principal {
     text-align: center;
     margin-top: 55px;
 }
 
-.cortes__produtos--titulo{
+.cortes__produtos--titulo {
     font-size: 35px;
     font-family: var(--fonte-secundaria);
     padding-top: 15px;
@@ -14,8 +16,142 @@
     color: rgb(246, 157, 22);
 }
 
-.cortes__lista{
+.cortes__lista {
     margin-top: 35px;
 }
 
+.cortes__produtos-bloco {
+    height: 440px;
+    width: 300px;
+    background-color: #fff;
+    border: 15px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.179);
+    transition: .8s;
+}
 
+
+.cortes__produtos-bloco img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.cortes__produtos-bloco img:hover {
+    width: 103%;
+    border-radius: 4px;
+}
+
+.cortes__produtos-texto {
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+    padding: 05px;
+    font-size: 20px;
+}
+
+.cortes__produtos-texto h3 {
+    color: #f9a703;
+    margin-bottom: 15px;
+}
+/*button usado no card dos produtos*/
+.cortes__produtos-bloco button{
+    margin-top: 8px;
+    width: 80%;
+    font-size: 18px;
+    background-color: coral;
+    border: none;
+    padding: 7px;
+    border-radius: 4px;
+    color: #f2f2f2;
+    font-weight: bold;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.cortes__produtos-bloco button:hover {
+    background-color: #f2f2f2;
+    color: coral;
+    transform: scale(1.2);
+    border:1px solid coral;
+}
+
+.estrelinhas img{
+    width: 50%;
+    
+}
+
+.estrelinhas img:hover{
+    width: 50%;
+    
+}
+
+/*seção dos acessorios  com desconto*/
+
+.cortes__promocoes {
+    width: 100%;
+    height: 380px;
+    background-color: #f2f2f2;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.cortes__promocoes--conteudo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cortes__promocoes--conteudoUm {
+    background-image: url('../img/barba01.jpg');
+}
+
+.cortes__promocoes--conteudoDois {
+    background-image: url('../img/corte.jpg');
+}
+
+.cortes__promocoes--texto h4 {
+    color: darkgoldenrod;
+}
+
+.cortes__promocoes--texto h2 {
+    color: #fff;
+    font-family: var(--fonte-secundaria);
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+@media(min-width: 720px) {
+
+    .cortes__produtos {
+        margin-bottom: 45px;
+    }
+
+    .cortes__promocoes {
+        margin-top: 50px;
+        border-radius: 4px;
+        height: 400px;
+    }
+
+    .cortes__promocoes--conteudo {
+        height: 350px;
+        width: 40%;
+    }
+
+    .cortes__promocoes--texto {
+        display: block;
+        text-align: center;
+        padding-top: 15%;
+    }
+    .cortes__promocoes--texto h2 {
+        font-size: 35px;
+    }
+   
+}
